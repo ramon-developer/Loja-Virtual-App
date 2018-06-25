@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LinearLayoutItem">
+
+        <LinearLayout android:id="@+id/linearLayoutDetails"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/image_item_shop_cart"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:id="@+id/tv_name_car_shop_cart"
+                android:textSize="26sp"
+                android:text="Book Title"
+                android:textColor="#000000"
+                android:minLines="2"
+                android:maxWidth="150dp" />
+
+            <TextView
+                android:id="@+id/tv_price_shop_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutQuantity"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:id="@+id/tv_quantity_shop_cart" />
+        </LinearLayout>
+
+    </LinearLayout>

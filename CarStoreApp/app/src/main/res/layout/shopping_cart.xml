@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_margin="5dp"
+        android:text="Shopping Cart" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Click on a product to edit the quantity" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_subtotal_shop_cart"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:textColor="#000000"
+        android:text="Subtotal"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/recycler_view_cart"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:clickable="true"
+        android:choiceMode="multipleChoice">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/LinearLayoutCheckout"
+        android:layout_gravity="end">
+
+        <Button android:id="@+id/btn_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
